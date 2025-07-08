@@ -1,4 +1,3 @@
-```html
 @extends('layout')
 
 @section('content')
@@ -19,7 +18,7 @@
         @foreach ($notes as $note)
         <tr>
             <td>{{ $note->title }}</td>
-            <td>{{ Str::limit($note->content, 50) }}</td>
+            <td>{{ \Illuminate\Support\Str::limit($note->content, 50) }}</td>
             <td>{{ $note->created_at->format('Y-m-d H:i') }}</td>
             <td>
                 <a href="{{ route('notes.show', $note) }}" class="btn btn-info btn-sm">View</a>

@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('notes.index') }}">NotesWebsite</a>
+            <a class="navbar-brand" href="{{ route('notes.index') }}">Notes Website</a>
             <div class="navbar-nav">
                 <a class="nav-link" href="{{ route('notes.create') }}">Create Note</a>
             </div>
